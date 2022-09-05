@@ -8,9 +8,7 @@ function App() {
       <header className="App-header">
           {name}
       </header>
-      <body className="App-body">
-        <Todo />
-      </body>
+        {Todo}
     </div>
   );
 }
