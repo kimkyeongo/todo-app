@@ -8,13 +8,9 @@ import {useState, useEffect} from "react";
         const [input, setInput] = useState("");
 
         const onChange = (e) => {
-            setInput(e.target.value)
-            setContent({id:contCurrent, cont:input});
+            setInput(e.target.value);
+            setContent({id:contCurrent, cont:e.target.value});
         }
-
-        // useEffect(() => {
-        //     onChange();
-        // }, [input]);
 
         const imgHandle = (e) => {
             e.target.src = e.target.src.indexOf("unchecked") < 0 ? "/unchecked.png" : "checked.png";
