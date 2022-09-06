@@ -10,10 +10,19 @@
 }
 
 .App-header {
-  background-color: #f6f6f6;
-  font-size: calc(10px + 2vmin);
+  font-weight: bold;
   color: black;
   border-bottom: solid #e2e3e3;
-  font-weight: bold;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  background: #161a2b;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+h1 {
+  margin: 2vmin;
+  color: #fff;
+  font-size: calc(10px + 2vmin);
 }
