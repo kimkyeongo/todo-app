@@ -9,9 +9,10 @@ import {useState} from "react";
             setContent({id:contCurrent, cont:e.target.value});
         };
 
-        // let [inputs, setInputs] = useState();
-        //
-        // let {item,setItem} = useState();
+        const imgHandle = (e) => {
+            e.target.src = e.target.src.indexOf("unchecked") < 0 ? "/unchecked.png" : "checked.png";
+        }
+
         const addFunc = () => {
             console.info(content);
             setContCurrent(contCurrent + 1);
@@ -25,7 +26,7 @@ import {useState} from "react";
                 <input name="todo-input" onChange={onChange}/>
                 <button onClick={addFunc}>추가</button>
                 <ul>
-                    {dataList.map(info => <li key={info.id}>{info.cont}</li> )}
+                    {dataList.map(info => <li key={info.id}><img src="/unchecked.png" onClick={imgHandle}/> {info.cont}</li> )}
                 </ul>
             </div>
         );
