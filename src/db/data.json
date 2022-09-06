@@ -1,0 +1,16 @@
+{
+  "days" : [
+    {
+      "id": 1,
+      "day" : 1
+    }
+  ],
+  "context": [
+    {
+      "id": 1,
+      "use": false,
+      "del": false,
+      "content": ""
+    }
+  ]
+}

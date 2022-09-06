@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
           {name}
       </header>
-        {Todo}
+        <Todo />
     </div>
   );
 }

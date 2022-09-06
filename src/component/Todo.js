@@ -1,38 +1,33 @@
 import "./Todo.css";
-import React from "react";
+import {useState} from "react";
 
-class Todo extends React.Component {
+    const Todo = () => {
+        const [content, setContent] = useState({
+            idx: 0,
+            content:""
+        });
 
-    constructor(props) {
-        super(props);
+        const onChange = (e) => {
+            setContent({
+                ...content,
+                {content : e.target.value, idx : 1}
+            });
+        };
 
-    }
-
-        // function handleAdd(e) {
+        // let [inputs, setInputs] = useState();
         //
-        // }
+        // let {item,setItem} = useState();
+        let addFunc = () => {
+            // const {value} = e.target;
 
-        // function buttonDiv() {
-        //     return (
-        //         <div className="Todo-body">
-        //             <button> 추가</button>
-        //         </div>
-        //     );
-        // }
+        }
 
-
-        // return (
-        //     <div>
-        //         {buttonDiv}
-        //     </div>
-        // );
-    render() {
         return (
             <div className="Todo-body">
-                ddd
+                <input name="todo-input" onChange={onChange}/>
+                <button onClick={addFunc}>추가</button>
             </div>
         );
     }
-}
 
 export default Todo;
