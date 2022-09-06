@@ -3,7 +3,33 @@
 }
 ul{
     list-style:none;
+    padding-left:0px;
 }
+li {
+    border: 2px solid #149fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+            90deg,
+            rgb(75, 167, 153) 0%,
+            rgb(102, 41, 133) 100%
+    );
+
+    padding: 16px;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.todo-check {
+    text-decoration:line-through;
+}
+.todo-uncheck {
+
+}
+
 img{
     width: 1.5vmin;
 }
@@ -12,7 +38,7 @@ img{
     border-radius: 4px 0 0 4px;
     border: 2px solid #5d0cff;
     outline: none;
-    width: 40vmin;
+    width: 63vmin;
     background: transparent;
 }
 
@@ -31,6 +57,7 @@ img{
             rgba(93, 12, 255, 1) 0%,
             rgba(155, 0, 250, 1) 100%
     );
+    width: 12vmin;
     color: #fff;
     text-transform: capitalize;
 }
